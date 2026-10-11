@@ -196,6 +196,8 @@
       #plan{
         font-size: 10px;
         padding: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
 </style>
@@ -642,17 +644,34 @@
           </div>
         </div>
   
-        <!-- Links -->
-        <div class="md:col-span-3">
-          <h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-4">Field Archives</h3>
-          <ul class="grid grid-cols-1 gap-2.5">
-            <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#tours">Gombe Treks</a></li>
-            <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#field">Students &amp; Researchers</a></li>
-            <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#why">Why Us</a></li>
-            <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#gallery">Gallery</a></li>
-          </ul>
-        </div>
-  
+          <!-- Links -->
+          <div class="md:col-span-3">
+            <h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-4">Field Archives</h3>
+            <ul class="grid grid-cols-1 gap-2.5">
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#tours">Gombe Treks</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#field">Students &amp; Researchers</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#why">Why Us</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="#gallery">Gallery</a></li>
+            </ul>
+
+            <!-- Our Trips -->
+            <h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mt-8 mb-4">Our Trips</h3>
+
+            <p class="font-label-sm text-label-sm text-secondary-fixed/80 uppercase tracking-wider mb-2">Tourists</p>
+            <ul class="grid grid-cols-1 gap-2.5 mb-5">
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="4-day-gombe-chimpanzees-kigoma-culture.html">4-Day Gombe &amp; Kigoma Culture</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="3-day-gombe-chimpanzee-trek.html">3-Day Gombe Trek</a></li>
+            </ul>
+
+            <p class="font-label-sm text-label-sm text-secondary-fixed/80 uppercase tracking-wider mb-2">Students &amp; Researchers</p>
+            <ul class="grid grid-cols-1 gap-2.5">
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="gombe-field-discovery.html">Gombe Field Discovery</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="university-field-school.html">University Field School</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="gombe-field-expedition.html">Gombe Field Expedition</a></li>
+              <li><a class="font-label-md text-label-md uppercase tracking-wider text-inverse-primary hover:text-secondary-fixed underline underline-offset-4 transition-colors duration-150" href="experts-signature-expedition.html">Experts Signature Expedition</a></li>
+            </ul>
+          </div>
+            
         <!-- Inquiry form -->
         <div class="md:col-span-5">
           <h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-2">Speak Direct to Kigoma Base</h3>
@@ -728,7 +747,7 @@ const card=(p,i,g)=>`<article class="bg-[#F7F2E4] border border-primary/25 round
       <span class="font-title-md text-title-md font-bold text-primary">${p.price} USD</span>
     </div>
     <div class="flex gap-2">
-      <a href="package.html?id=${p.id}" class="border border-primary/40 text-primary hover:bg-primary hover:text-[#F9F5EC] font-label-sm text-label-sm px-4 py-2.5 rounded-DEFAULT tracking-wider uppercase transition-colors">Details</a>
+      <a href="${p.id}.html" class="border border-primary/40 text-primary hover:bg-primary hover:text-[#F9F5EC] font-label-sm text-label-sm px-4 py-2.5 rounded-DEFAULT tracking-wider uppercase transition-colors">Details</a>
       <button data-pkg="${p.n}" class="pick bg-primary hover:bg-secondary text-[#F9F5EC] font-label-sm text-label-sm px-4 py-2.5 rounded-DEFAULT tracking-wider uppercase transition-colors">Enquire</button>
     </div>
   </div>
