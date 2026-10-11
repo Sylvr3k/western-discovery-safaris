@@ -178,6 +178,26 @@
     #field{
     margin-bottom: -40px;    
     }
+
+    @media(max-width: 450px){
+      header img{
+         height: 90px;
+         width: 90px;
+      }
+
+      #md{
+         font-size: 18px;
+      }
+
+      #sm{
+        font-size: 8px;
+      }
+
+      #plan{
+        font-size: 10px;
+        padding: 16px;
+      }
+    }
 </style>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -209,8 +229,8 @@
         <a class="flex items-center gap-3 group" href="#">
             <img alt="Western Discovery Safaris Logo" height="130px" width="130x" src="Western-Discoveries-No-Words.svg"/>
             <div id="Way" class="flex flex-col">
-            <span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight leading-none group-hover:text-secondary transition-colors duration-150">Western Discovery Safaris</span>
-            <span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mt-1">Kigoma Port • Lake Tanganyika • Est. 2024</span>
+            <span id="md" class="font-headline-md text-headline-md font-semibold text-primary tracking-tight leading-none group-hover:text-secondary transition-colors duration-150">Western Discovery Safaris</span>
+            <span id="sm" class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mt-1">Kigoma Port • Lake Tanganyika • Est. 2024</span>
             </div>
         </a>
 <nav class="hidden lg:flex items-center space-x-10">
@@ -673,10 +693,8 @@
           &copy; <span id="year"></span> Western Discovery Safaris Ltd. Kigoma, Lake Tanganyika, Tanzania. Karibu Sana.
         </p>
         <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-4 text-inverse-primary/70 font-label-sm text-[11px] uppercase tracking-wider">
-            <span>Member: Tanzania Association of Tour Operators</span>
-            <span class="hidden sm:inline">•</span>
-            <span>TALA Licensed Operator</span>
-          </div>
+           <span>Licensed by the Tourist Agents Licensing Authority (TALA)</span>
+        </div>
         <!-- Add once verified: <span class="font-label-sm text-[11px] text-inverse-primary/70">TALA LICENSE NO. [real number]</span> -->
       </div>
     </div>
