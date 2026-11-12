@@ -3,48 +3,30 @@ const WA='255741359889'; // replace with your WhatsApp number, country code firs
 const P='Steve/';
 const inc=(a,b)=>({inc:a,exc:b});
 const tours=[
-{n:'4-Day Gombe Chimpanzees & Kigoma Culture',img:'3A2A6661.jpg',alt:'Adult chimpanzee in Gombe',price:'$1,500',len:'4 days',
-s:'Go straight from Kigoma to the forest made famous by Dr. Jane Goodall. Spend two nights in Gombe Stream National Park trekking with wild chimpanzees, then return to Kigoma to explore its history and culture, from the Ujiji slave trade route and the legendary MV Liemba to a visit with coffee farmers and the Ha people. Accommodation, meals, snacks, non-alcoholic drinks and transport are all taken care of.',
-d:'Go straight from Kigoma to the forest made famous by Dr. Jane Goodall. Spend two nights in Gombe Stream National Park trekking with wild chimpanzees, then return to Kigoma to explore its history and culture, from the Ujiji slave trade route and the legendary MV Liemba to a visit with coffee farmers and the Ha people. Accommodation, meals, snacks, non-alcoholic drinks and transport are all taken care of.',
-it:[['Day 1: Arrival in Kigoma and Boat to Gombe',[
-    'Arrive in Kigoma and meet your guide.',
-    'After arrival, board the boat for a scenic ride across Lake Tanganyika, passing fishing villages and forested hills.',
-    'Arrive at Gombe Stream National Park, check in and settle in.',
-    'Lunch or dinner, depending on arrival time, followed by a park briefing on chimpanzee behavior, trekking rules and what to expect.',
-    'Free time to relax on the lake beach or take a gentle walk near camp',
-    'Dinner and overnight in Gombe.'
-  ]],
-['Day 2: Main chimpanzee trek',[
-    'Early breakfast, then set off with your ranger and guide into the forest.',
-    'Follow the trails through steep valleys and dense rainforest to find a chimpanzee community, and spend time watching them feed, groom, play and interact. You may also spot red colobus monkeys, baboons and colorful birds.',
-    'Return to camp for lunch and rest.',
-    'Afternoon at leisure: swim in the lake, relax on the beach, or take an optional short walk to the waterfall.',
-    'Dinner and overnight in Gombe.'
-  ]],
-['Day 3: Short trek and return to Kigoma',[
-    'Breakfast at camp, then one more short trek for a final chance to see the chimpanzees.',
-    'Return to camp, pack up and have lunch.',
-    'Board the boat back to Kigoma and check in to your hotel.',
-    'Relax, then enjoy sunset by Lake Tanganyika.',
-    'Dinner and overnight in Kigoma.'
-  ]],
-['Day 4: Kigoma Town Tour and Rural Tour (Coffee and the Ha People)',[
-    'Breakfast at the hotel, then set off with your guide.',
-    { t: '<b>Kigoma town tour (morning):</b>', sub: ['<b>Ujiji slave market route:</b> Walk the historic trail through Ujiji, once the end of the 19th-century caravan routes and a major hub of the East African slave trade.',
-         '<b>MV Liemba:</b> See this famous steamship, built in Germany in 1913 and still sailing Lake Tanganyika today.',
-         '<b>Livingstone Memorial and museum in Ujiji,</b> where Stanley met Dr. Livingstone in 1871.',
-         '<b>Ujiji harbour,</b> to see fishermen and traditional boat builders at work.'       
-        ] },
-    { t: '<b>Rural tour (late morning to afternoon):</b>', sub: [
-            '<b>Coffee tour:</b> Visit a local farm and see how coffee is grown, harvested, dried and processed, finishing with a fresh cup made from the beans.',
-            '<b>Cultural experience with the Ha people:</b> Meet the community and learn about their history, farming traditions and customs.',   
-        ] },    
-    'Enjoy a local lunch in the village.',
-    'Return to Kigoma for transfer to the airport, station or bus stand. End of services.',
-  ]],  
-],
-inc:['Accommodation in Gombe (2 nights) and Kigoma (1 night)','All meals, snacks and non-alcoholic drinks(water, soft drinks, tea and coffee)','Boat transfers Kigoma to Gombe and back','Ground transport during the tours','Kigoma town tour, including the Ujiji slave market route and MV Liemba','Rural tour with coffee experience and Ha cultural visit','Guided chimpanzee treks with a ranger and guide','Park entry and conservation fees'],
-exc:['Alcoholic drinks','Flights or transport to and from Kigoma','Personal expenses, tips and travel insurance']},
+{n:'Gombe Chimpanzee & Lake Tanganyika Day Trip',img:'0M2A9501-2.jpg',alt:'Ngalawa fishing boat on Lake Tanganyika',price:'$428',len:'1 day',
+s:"Spend a day in the forest where chimpanzee research began. Imagine this: you step off a boat onto a pebbled beach, the forested hills of Gombe rising straight up from the water, and within the hour you're sitting a few metres from a wild chimpanzee. That's what a day in Gombe feels like. This is the forest Jane Goodall made famous. More than sixty years on, it's still one of the best places on earth to watch wild chimps going about their lives: grooming, squabbling, playing, raising babies. And you can do it all in a single day from Kigoma.",
+d:"Spend a day in the forest where chimpanzee research began. Imagine this: you step off a boat onto a pebbled beach, the forested hills of Gombe rising straight up from the water, and within the hour you're sitting a few metres from a wild chimpanzee. That's what a day in Gombe feels like. This is the forest Jane Goodall made famous. More than sixty years on, it's still one of the best places on earth to watch wild chimps going about their lives: grooming, squabbling, playing, raising babies. And you can do it all in a single day from Kigoma.",
+it:[['Morning: Across the lake',[
+        "Meet our team in Kigoma for a quick briefing, then climb aboard for the boat ride to Gombe. It's a lovely journey in itself. Lake Tanganyika is one of the oldest and deepest lakes in the world, and the shoreline slips by in green folds of forest and fishing villages."
+      ]],
+    ['Arrival: Meet your guide',[
+        "Once we land and the park formalities are done, you'll meet your park guide, who knows these trails and these chimps well. You'll hear how Gombe's research started and why it still matters, before heading in.Early breakfast, then set off with your ranger and guide into the forest."
+      ]],
+    ['Into the forest',[
+        "This is the part you came for. Your guide leads you along forest trails, spotting signs of life: fresh fruit on the ground, distant calls, movement in the canopy. Chimps roam freely, so every trek is different. When you find them, you'll spend time watching in line with park rules, and it's usually the moment people remember longest."
+      ]],
+    ['Lunch by the lake',[
+        "After the trek, we break for lunch, with snacks, bottled water and soft drinks on hand. Kick off your boots and enjoy one of the most beautiful lunch spots in Tanzania."
+      ]],
+    ['A little more time to wander',[
+        "If time allows, you can stay on to take photos, enjoy the shoreline and soak up the quiet before heading back."
+      ]],
+    ['Home across the water',[
+        "The boat takes you back to Kigoma, tired, happy and probably already planning how to describe the day to your friends."
+      ]],        
+    ],
+    inc:['Return boat transfers between Kigoma and Gombe','Gombe Stream National Park entrance fees','Park guide fees','Guided chimpanzee trek','Lunch','Snacks, bottled water and soft drinks','Support from the Western Discovery Safaris team throughout'],
+    exc:['Travel to and from Kigoma (flights, buses or other transport)','Accommodation in Kigoma before or after your trip','Tanzania visa fees', 'Travel and medical insurance', 'Dinner and any meals outside the day trip', 'Alcoholic drinks and any extra drinks or snacks beyond those provided', 'Tips for your guide and boat crew (always appreciated, never required)', 'Personal items and souvenirs']},    
 {n:'3-Day Gombe Chimpanzee Trek',img:'IMG_3503.jpg',alt:'Mother chimpanzee holding her young',price:'$888',len:'3 days',stay: true,
 s:"Step into the forest made famous by Dr. Jane Goodall. This 3-day adventure takes you from the shores of Lake Tanganyika deep into Gombe Stream National Park, where you will walk beside our closest living relatives, the wild chimpanzees. Enjoy a scenic boat ride across the lake, guided treks through lush rainforest, and nights in comfortable lakeside accommodation, with your meals, drinks and transport all taken care of. Small groups, expert guides, and unforgettable close encounters make this one of Tanzania's most rewarding wildlife experiences",
 d:"Step into the forest made famous by Dr. Jane Goodall. This 3-day adventure takes you from the shores of Lake Tanganyika deep into Gombe Stream National Park, where you will walk beside our closest living relatives, the wild chimpanzees. Enjoy a scenic boat ride across the lake, guided treks through lush rainforest, and nights in comfortable lakeside accommodation, with your meals, drinks and transport all taken care of. Small groups, expert guides, and unforgettable close encounters make this one of Tanzania's most rewarding wildlife experiences",
@@ -73,7 +55,49 @@ it:[['Day 1: Kigoma to Gombe',[
         'End of services.'
     ]]],
 inc:['Accommodation in Gombe (2 nights)','All meals in Gombe(breakfast, lunch and dinner)','Drinks in Gombe (water, soft drinks, tea and coffee)','Boat transfers Kigoma to Gombe and back','Guided treks with ranger and guide'],
-exc:['Alcoholic drinks','Accommodation in Kigoma (optional extra)','Personal expenses, tips and travel insurance']}];
+exc:['Alcoholic drinks','Accommodation in Kigoma (optional extra)','Personal expenses, tips and travel insurance']},
+{n:'4-Day Gombe Chimpanzees & Kigoma Culture',img:'3A2A6661.jpg',alt:'Adult chimpanzee in Gombe',price:'$1,500',len:'4 days',
+s:'Go straight from Kigoma to the forest made famous by Dr. Jane Goodall. Spend two nights in Gombe Stream National Park trekking with wild chimpanzees, then return to Kigoma to explore its history and culture, from the Ujiji slave trade route and the legendary MV Liemba to a visit with coffee farmers and the Ha people. Accommodation, meals, snacks, non-alcoholic drinks and transport are all taken care of.',
+d:'Go straight from Kigoma to the forest made famous by Dr. Jane Goodall. Spend two nights in Gombe Stream National Park trekking with wild chimpanzees, then return to Kigoma to explore its history and culture, from the Ujiji slave trade route and the legendary MV Liemba to a visit with coffee farmers and the Ha people. Accommodation, meals, snacks, non-alcoholic drinks and transport are all taken care of.',
+it:[['Day 1: Arrival in Kigoma and Boat to Gombe',[
+    'Arrive in Kigoma and meet your guide.',
+    'After arrival, board the boat for a scenic ride across Lake Tanganyika, passing fishing villages and forested hills.',
+    'Arrive at Gombe Stream National Park, check in and settle in.',
+    'Lunch or dinner, depending on arrival time, followed by a park briefing on chimpanzee behavior, trekking rules and what to expect.',
+    'Free time to relax on the lake beach or take a gentle walk near camp',
+    'Dinner and overnight in Gombe.'
+    ]],
+['Day 2: Main chimpanzee trek',[
+    'Early breakfast, then set off with your ranger and guide into the forest.',
+    'Follow the trails through steep valleys and dense rainforest to find a chimpanzee community, and spend time watching them feed, groom, play and interact. You may also spot red colobus monkeys, baboons and colorful birds.',
+    'Return to camp for lunch and rest.',
+    'Afternoon at leisure: swim in the lake, relax on the beach, or take an optional short walk to the waterfall.',
+    'Dinner and overnight in Gombe.'
+    ]],
+['Day 3: Short trek and return to Kigoma',[
+    'Breakfast at camp, then one more short trek for a final chance to see the chimpanzees.',
+    'Return to camp, pack up and have lunch.',
+    'Board the boat back to Kigoma and check in to your hotel.',
+    'Relax, then enjoy sunset by Lake Tanganyika.',
+    'Dinner and overnight in Kigoma.'
+    ]],
+['Day 4: Kigoma Town Tour and Rural Tour (Coffee and the Ha People)',[
+    'Breakfast at the hotel, then set off with your guide.',
+    { t: '<b>Kigoma town tour (morning):</b>', sub: ['<b>Ujiji slave market route:</b> Walk the historic trail through Ujiji, once the end of the 19th-century caravan routes and a major hub of the East African slave trade.',
+         '<b>MV Liemba:</b> See this famous steamship, built in Germany in 1913 and still sailing Lake Tanganyika today.',
+         '<b>Livingstone Memorial and museum in Ujiji,</b> where Stanley met Dr. Livingstone in 1871.',
+         '<b>Ujiji harbour,</b> to see fishermen and traditional boat builders at work.'       
+        ] },
+    { t: '<b>Rural tour (late morning to afternoon):</b>', sub: [
+            '<b>Coffee tour:</b> Visit a local farm and see how coffee is grown, harvested, dried and processed, finishing with a fresh cup made from the beans.',
+            '<b>Cultural experience with the Ha people:</b> Meet the community and learn about their history, farming traditions and customs.',   
+        ] },    
+    'Enjoy a local lunch in the village.',
+    'Return to Kigoma for transfer to the airport, station or bus stand. End of services.',
+    ]],  
+],
+inc:['Accommodation in Gombe (2 nights) and Kigoma (1 night)','All meals, snacks and non-alcoholic drinks(water, soft drinks, tea and coffee)','Boat transfers Kigoma to Gombe and back','Ground transport during the tours','Kigoma town tour, including the Ujiji slave market route and MV Liemba','Rural tour with coffee experience and Ha cultural visit','Guided chimpanzee treks with a ranger and guide','Park entry and conservation fees'],
+exc:['Alcoholic drinks','Flights or transport to and from Kigoma','Personal expenses, tips and travel insurance']}];
 const field=[
 {n:'Gombe Field Discovery',img:'DJI_0642.jpg',alt:'Gombe forest from above',price:'$2,950',len:'3 days, 2 nights, up to 8 guests', stay:true,
 s:"In just three days you'll take an evening walk beneath the canopy, set out at dawn to watch wild chimpanzees feed, groom, play and interact, and end your stay with birdwatching and one last trek. Between treks you'll learn how Gombe is protected, share the evenings with your journal, and eat traditional local meals prepared for you. With a maximum of 8 guests, every moment feels personal.", 
